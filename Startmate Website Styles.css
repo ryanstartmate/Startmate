@@ -1,0 +1,380 @@
+<style>
+    
+    /* Change default Notion variables */
+    :root {
+        --color-bg-navbar: rgba(25,25,25,0.9) !important;
+        --transition: all .2s ease-in-out !important;
+        --color-bg-default: white !important;
+        --color-text-green: black !important;
+        --color-text-default: black !important;
+        --color-bg-yellow-light: #FFE1C7;
+        --color-bg-yellow: #FFE1C7;
+        --color-bg-pink: #DD0F6F !important;
+    }
+
+/* Hidden Homepage */
+    #page-index #block-22a7ff45d3ab48aba263977e80d75d4d,
+    #page-index .notion-callout__icon {
+    display: none !important;
+    }
+
+/* hidden mobile nav for community page */
+    #page-community #block-78f7d1e7a2a54373984ab950c806a0fd {
+    display: none !important;
+    }
+
+/* small text */
+    .color-brown {
+    font-size: 12px !important;
+    color: black !important;
+    }
+
+/* Hide certain elements */
+    #page-index .notion-header,
+    .notion-property__title__icon-wrapper,
+    .notion-page__icon {
+        display: none !important;
+    }
+    
+/* Change default container width */
+    .max-width {
+        padding-bottom: 60px !important;
+        max-width: 1140px !important;
+    }
+
+/* Navbar styles */
+    .notion-navbar {
+        background: white !important;
+        backdrop-filter: blur(20px) !important;
+    }
+
+/* Navbar links hover effect */
+    .notion-navbar>a:hover {
+        color: var(--color-text-green) !important;
+        background: none !important;
+    }
+
+/* Notion divider styles */
+    .notion-divider {
+        border-bottom: 1px solid var(--color-text-green) !important;
+        margin: 0 0 8px !important;
+    }
+
+/* Heading 1 styles */
+    h1 {
+        letter-spacing: -1px !important;
+        line-height: 1.2 !important;
+        font-weight: 700 !important;
+        font-size: 64px !important;
+        max-width: 90% !important;
+    }
+
+/* Spacing between gallery items */
+    .notion-collection-gallery {
+        grid-gap: 40px !important;
+    }
+
+/* Transition for gallery cards */
+    .notion-collection-card {
+        transition: var(--transition) !important;
+        box-shadow: none !important;
+
+    }
+
+/* Gallery cards hover effect */
+    .notion-collection-card:hover {
+        transform: scale(1.02) !important;
+    }
+
+/* Gallery cards click effect */
+    .notion-collection-card:active {
+        transform: scale(1) !important;
+    }
+
+    /* Gallery cards title styles */
+    .notion-collection-card .notion-property__title {
+        background: White !important;
+        padding: 20px !important;
+    }
+
+    /* Gellery card cover height */
+    .notion-collection-card__cover,
+    .notion-collection-card__cover div,
+    .notion-collection-card__cover img {
+        max-height: 280px !important;
+        height: 280px !important;
+        border: none !important;
+    }
+
+/* Custom page link styles */
+    .notion-page {
+        background: #F6F9FB !important;
+        padding: 20px 30px !important;
+        font-size: 18px !important;
+        margin: 4px 0 !important;
+        border: none !important;
+    }
+
+/* Page link type styles */
+    .notion-page .notion-semantic-string {
+        transition: var(--transition) !important;
+        font-weight: 300 !important;
+        opacity: 0.7 !important;
+    }
+
+/* Page link hover effect */
+    .notion-page:hover .notion-semantic-string {
+        opacity: 1 !important;
+    }
+
+/* Increase body copy line height */
+    .notion-text__content {
+        line-height: 1.8 !important;
+    }
+
+/* Mobile Styles */
+    /* Decrease heading size on mobile */
+        @media (max-width: 600px) {
+        h1 {
+            max-width: 100% !important;
+            font-size: 40px !important;
+        }
+
+    /* Hidden Elements on mobile */
+        #block-3453b4786e964ebc911085b18499deda,
+        #block-dc55165b931b45ec83fd42230b06ecc7,
+        #block-7c8dedc9b5d7442d943580360dfe6b1a {
+        display: none !important;
+
+                }
+
+    /* Reverse program columns on mobile */
+        #block-b3aaf6aec403490392abdb73632ede06 {
+        flex-direction: column-reverse !important;
+            }
+
+    /* Community Nav */
+        /* Sidebar Nav Hide */
+        #page-community #block-c3a3f13001ec468890eb873bb78f7e09 {
+        display: none !important;
+        }
+
+        /* Mobile Nav display */
+        #page-community #block-78f7d1e7a2a54373984ab950c806a0fd {
+        display: block !important;
+        }
+   
+    }
+
+
+/* Fellowship Btns that link to Application Page */ 
+    #block-13c2c61f7e064b07aecb15919d31be2e,                        /* Homepage */
+    #page-fellowships #block-866e1ecb39db4d31acab198ac275ebd1 {     /* Hero Application on fellowships page */
+    background-color: #188466 !important;
+    box-shadow: 0px 0px 10px #38E04A !important;
+    border-radius: 0 !important;
+    color: white !important;
+    }
+
+/* Fellowship Hero Application Form Link */
+    #page-women #block-e8286e89145a406ab3b9a0d497536170 a,          /* Hero Application Form Link */
+    #page-founders #block-1df56aaec1e94c09b94c5e802a54126c a,       /* Hero Application Form Link */
+    #page-students #block-225c606297f04e26a65a5088a3ce60d1 a {      /* Hero Application Form Link */
+    background-color: #188466 !important;
+    box-shadow: 0px 0px 10px #38E04A !important;
+    border-radius: 0 !important;
+    color: white !important;
+    padding: 20px 30px !important;
+    font-size: 18px !important;
+        }
+
+/* Homepage: First believers btn */
+    #block-9624083364fb475582ee98cfb591c5ca {
+    background-color: #DFAB00 !important;
+    box-shadow: 0px 0px 10px #FCEE21 !important;
+    border-radius: 0 !important;
+    color: white !important;
+      }
+
+ /* First believers  Hero Application Form Link */
+    #page-first-believers #block-c0cf385407724452bb174bcfc99645f9 a {  /* Hero Application Form Link */
+    background-color: #DFAB00 !important;
+    box-shadow: 0px 0px 10px #FCEE21 !important;
+    border-radius: 0 !important;
+    color: white !important;
+    padding: 20px 30px !important;
+            font-size: 18px !important;
+        }
+
+/* Homepage: Accelerator btn */
+    #block-fae471a39f9a4119a4bcdad38bf6761b,
+    #page-accelerator #block-866e1ecb39db4d31acab198ac275ebd1 { /* Hero Application link to application page */
+    background-color: #6940A4 !important;
+    box-shadow: 0px 0px 10px #FF00FF !important;
+    border-radius: 0 !important;
+    color: white !important;
+        }
+
+
+/* Homepage: Newsletter link */
+    #block-7348d353e5314ad78b344088e4cd2e2e a  {
+        letter-spacing: -0.5px !important;
+        display: block !important;
+        text-align: center !important;
+        padding: 25px !important;
+        font-weight: 600 !important;
+        border: 1px solid !important;
+            
+        }
+
+        #block-7348d353e5314ad78b344088e4cd2e2e a:hover  {
+        background-color: black !important;
+        color: white !important;
+        transition-duration: 1s !important;
+                
+        }
+
+
+/* Navbar */
+    .notion-navbar {
+        background: #F6F9FB !important;
+        box-shadow: none !important;
+        position: fixed !important;
+    }
+    .notion-navbar>a { padding: 0 !important; }
+    .notion-navbar>a:hover { background: white !important; }
+    .notion-breadcrumb__divider { margin: -4px 4px 0 !important; }
+    .notion-navbar__title { overflow: visible !important;}
+    .notion-quote {
+        padding: 10 20 10 20 !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        position: fixed !important;
+        z-index: 9999 !important;
+        display: flex !important;
+        border: none !important;
+        margin: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+    }
+
+    .notion-quote .notion-semantic-string {
+    font-size: 14px !important;
+    padding-top: 10px !important;
+    }
+
+/* Hide Page Title and Icon */
+    #page-fellowships .notion-header,
+    #page-women .notion-header,
+    #page-events .notion-header,
+    #page-students .notion-header,
+    #page-apply .notion-header,
+    #page-accelerator .notion-header,
+    #page-community .notion-header,
+    #page-first-believers .notion-header,
+    #page-launch-vic .notion-header,
+    #page-founders .notion-header,
+    #page-apply-now .notion-header,
+    #page-story .notion-header,
+        .notion-property__title__icon-wrapper,
+        .notion-page__icon {
+            display: none !important;
+        }
+
+/* Decrease H1 Hero Copy on subpages */
+    #page-accelerator #block-f79cac975f9f447b9bc2ecdbe2406c81,
+    #page-fellowships #block-958f2f3cb9184578af39f4684f5fbb69,
+    #page-women #block-2d7ab5bff8b34de9beccff6ee6a18e56,
+    #page-students #block-798271383abe480d97b0d2e65ee7f180,
+    #page-first-believers #block-fd953f8cae654f74916c068e536f1461,
+    #page-story #block-4d599788a970464c98f5484288f3e6bf{
+    font-size: 40px !important;
+    }
+/* Indiv page applicaton form links at bottom of page */
+    #page-accelerator #block-c22d9b3b748b4563bed30fc4d886aa20,
+    #page-women #block-e29d5ea09db94395af070d0f8f775f1c,
+    #page-founders #block-8bc2390f72d54d059ac9a13e0583cbb4,
+    #page-students #block-9c1f85f403c04f8881bb5e16fd90af7b,
+    #page-first-believers #block-c4db1c72c2094d2492fe2ae2c996f4a7 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+        /* H1 copy */
+        #page-accelerator #block-c22d9b3b748b4563bed30fc4d886aa20 h1,
+        #page-women #block-e29d5ea09db94395af070d0f8f775f1c h1,
+        #page-founders #block-8bc2390f72d54d059ac9a13e0583cbb4 h1,
+        #page-students #block-9c1f85f403c04f8881bb5e16fd90af7b h1 {
+        width: 100% !important;
+        }
+        
+        /* Form Link */
+        #page-accelerator #block-c015fe9fef0e4d5a899d31594b779617 a,
+        #page-women #block-976b5a60a5a14dc69104141566bc20b5 a,
+        #page-founders #block-08216ba1d9344d5799594e96e90fe7f4 a,
+        #page-students #block-1d0e4ac5e8dd48e3a1a42bf58aeacd9b a,
+        #page-first-believers #block-a7a8cbb1586a42fb9b167a0c15da8302 a {
+            letter-spacing: -0.5px !important;
+            display: block !important;
+            text-align: center !important;
+            padding: 25px !important;
+            font-weight: 600 !important;
+            border: 1px solid !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+                
+            }
+
+        #page-accelerator #block-c015fe9fef0e4d5a899d31594b779617 a:hover,
+        #page-women #block-976b5a60a5a14dc69104141566bc20b5 a:hover,
+        #page-founders #block-08216ba1d9344d5799594e96e90fe7f4 a:hover,
+        #page-students #block-1d0e4ac5e8dd48e3a1a42bf58aeacd9b a:hover,
+        #page-first-believers #block-a7a8cbb1586a42fb9b167a0c15da8302 a:hover  {
+            background-color: black !important;
+            color: white !important;
+            transition-duration: 1s !important;
+
+        }
+
+/* hidden accelerator */
+    #page-accelerator #block-1ee5c1a0cfb542709457be688d9f9500 {
+    display: none !important;
+    }
+
+/* hidden fellowships */
+    #page-accelerator #block-e3a10efef3cd48d9af6cfd0fa423f257,
+    #page-fellowships #block-e3a10efef3cd48d9af6cfd0fa423f257 {
+    display: none !important;
+    }
+
+/* Application Page styles */
+/* Hide Notion Callout Icons */
+    #page-apply .notion-callout__icon {
+    display: none !important;
+    }
+
+/* Cmmunity Sidebar */
+    #page-community #block-c3a3f13001ec468890eb873bb78f7e09 {
+        position: fixed !important;
+        top: 200px !important;
+        left: 5% !important;
+    }
+
+
+@media (max-width: 800px) {
+        :root {
+            --navbar-height: 60px !important;
+    }
+}
+
+/* Nav apply btn */
+.notion-link.link>.highlighted-color>span.highlighted-background.bg-yellow {
+	background: #127B6B !important;
+    border-radius: 15px !important;
+    padding: 5px 10px !important;
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+</style>
